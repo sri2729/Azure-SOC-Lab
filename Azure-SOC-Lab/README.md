@@ -68,3 +68,7 @@ SecurityEvent
 ) on $left.IPAddress contains $right.Network
 | project TimeGenerated, Account, IPAddress, CityName, CountryName
 ```
+
+## 📸 Screenshot - GeoIP KQL Query
+![KQL Query with GeoIP](screenshots/kql1.png)  
+*This query extracts Event ID 4625 (failed logins), enriches with GeoIP data using a custom watchlist, and outputs attacker locations with latitude and longitude.*
